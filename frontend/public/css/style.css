@@ -1,0 +1,54 @@
+body {
+  font-family: Arial;
+  background: linear-gradient(135deg, #667eea, #8b71ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  width: 320px;
+  text-align: center;
+}
+
+input, select, button {
+  width: 85%;
+  padding: 10px;
+  margin: 8px auto;
+  display: block;
+}
+
+button {
+  background: #667eea;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.link {
+  color: blue;
+  cursor: pointer;
+}
+
+#roleSelect { display: none; }
+#panel { display: none; }
+#adminPanel { display: none; }
+
+.card-producto {
+  background: white;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 2px solid #667eea;
+  text-align: left;
+}
+
+.card-producto:hover {
+  transform: scale(1.02);
+  transition: 0.2s;
+}

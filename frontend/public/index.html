@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Sistema</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+<div class="card" id="formCard">
+  <h2 id="titulo">Login</h2>
+
+  <input id="username" placeholder="Usuario">
+  <input id="password" type="password" placeholder="Contraseña">
+
+  <select id="roleSelect">
+    <option value="admin">Administrador</option>
+    <option value="user">Cliente</option>
+  </select>
+
+  <button onclick="accion()">Ingresar</button>
+
+  <p onclick="toggleModo()" class="link">
+    ¿No tienes cuenta? Regístrate 
+  </p>
+</div>
+
+<div id="panel">
+  <h3>Panel</h3>
+
+  <button onclick="logout()">Cerrar sesión</button>
+
+  <div id="adminPanel">
+    <h4>Crear Producto</h4>
+    <input id="title" placeholder="Título">
+    <input id="description" placeholder="Descripción">
+    <input id="price" type="number" placeholder="Precio">
+    <button onclick="crearProducto()">Crear</button>
+  </div>
+
+  <button onclick="verProductos()">Ver productos</button>
+  <div id="resultado"></div>
+</div>
+
+<script src="./js/app.js"></script>
+</body>
+</html>
